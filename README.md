@@ -2,7 +2,7 @@
 
 Um sistema de agendamento de consultas odontológicas desenvolvido em Java com Spring Boot e MySQL, com persistência via Docker.
 
-## Tecnologias Utilizadas
+## 🛠️Tecnologias Utilizadas
 
 - **Linguagem**: Java 17
 - **Framework**: Spring Boot 4.0
@@ -10,13 +10,13 @@ Um sistema de agendamento de consultas odontológicas desenvolvido em Java com S
 - **Docker**: Orquestração do banco de dados via Docker Compose
 - **Bibliotecas**: Lombok, Jakarta Validation, Hibernate, JPA
 
-## Funcionalidades
+## 📌Funcionalidades
 
 - Criação, alteração e exclusão de agendamentos
 - Consulta de agendamentos por data
 - Validação de horários (não permite agendamento duplicado no mesmo horário)
 
-## Como Executar
+## 💻Como Executar
 
 1. Certifique-se de que o Docker está instalado e configurado.
 2. Crie as variáveis de ambiente: `DB_USER`, `DB_PASSWORD`, `DB_ROOT_PASSWORD`.
