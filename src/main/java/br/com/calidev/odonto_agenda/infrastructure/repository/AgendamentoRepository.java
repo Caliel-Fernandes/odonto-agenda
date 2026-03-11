@@ -1,0 +1,20 @@
+package br.com.calidev.odonto_agenda.infrastructure.repository;
+
+import br.com.calidev.odonto_agenda.infrastructure.entity.Agendamento;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+public interface AgendamentoRepository extends JpaRepository<Agendamento, Long> {
+
+    Agendamento findByServicoAndDataHoraAgendamentoBetween(String servico, LocalDateTime dataHoraInicio,
+                                                           LocalDateTime dataHoraFinal);
+
+    void deleteByDataHoraAgendamentoAndCliente(LocalDateTime dataHoraAgendamento, String cliente);
+
+    List<Agendamento> findByDataHoraAgendamentoBetween(LocalDateTime dataHoraInicial, LocalDateTime dataHoraFinal);
+
+    Agendamento findByDataHoraAgendamentoAndCliente(LocalDateTime dataHoraAgendamento, String cliente);
+
+}
