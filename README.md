@@ -1,4 +1,4 @@
-# Odonto Agenda
+# 🦷Odonto Agenda
 
 Um sistema de agendamento de consultas odontológicas desenvolvido em Java com Spring Boot e MySQL, com persistência via Docker.
 
